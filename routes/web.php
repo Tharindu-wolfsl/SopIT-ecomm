@@ -20,6 +20,7 @@ use Illuminate\Support\Facades\Session;
 Route::get('/login', function () {
     return view('login');
 });
+Route::view('/register','register');
 Route::get('/logout', function () {
     Session::forget('user');
     return redirect('login');
@@ -29,6 +30,7 @@ Route::get('/delete_item/{id}', function ($id) {
     return redirect('cart');
 });
 Route::post('/login',[UserController::class,'login']);
+Route::post('/register',[UserController::class,'register']);
 Route::get('/',[ProductController::class,'index']);
 Route::get('/detail/{id}',[ProductController::class,'detail']);
 Route::get('search',[ProductController::class,'search']);
@@ -38,5 +40,7 @@ Route::get('/orders',[ProductController::class,'orderAmount']);
 Route::post('place_order',[ProductController::class,'placeOrder']);
 Route::get('/myorders',[ProductController::class,'myOrders']);
 
+
+Route::view('/testform','formview');
 
 

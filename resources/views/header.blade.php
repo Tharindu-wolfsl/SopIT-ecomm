@@ -22,7 +22,7 @@ if(Session::has('user')){
           </li>
          
           <li class="nav-item ">
-            <a class="nav-link disabled">Disabled</a>
+            <a class="nav-link" href="/testform">Form</a>
           </li>
         </ul>
         <form class="d-flex" role="search" method="GET" action="/search">
@@ -47,6 +47,9 @@ if(Session::has('user')){
           <a class="btn btn-secondary" href="/login" >
           Login
           </a>
+          <a class="btn btn-secondary" href="/register" >
+            Register
+            </a>
           @endif
         
           
