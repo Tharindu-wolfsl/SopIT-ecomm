@@ -36,6 +36,7 @@ Route::post('add_to_cart',[ProductController::class,'addToCart']);
 Route::get('/cart',[ProductController::class,'cartList']);
 Route::get('/orders',[ProductController::class,'orderAmount']);
 Route::post('place_order',[ProductController::class,'placeOrder']);
+Route::get('/myorders',[ProductController::class,'myOrders']);
 
 
 
