@@ -19,13 +19,15 @@
         justify-content: center
     }
     img.slider-img{
-        height: 80vh;
-        width: 60% !important;
+        height: 400px;
+        width: 400px !important;
+        margin-left: 20px;
     }
     div.carousel-caption{
         background-color: rgba(0, 0, 0, 0.24);
     }
     .carousel{
+        margin-top: 30px;
         margin-bottom: 60px;
     }
     .t-item img{
@@ -55,8 +57,25 @@
         justify-content: space-between;
         padding: 40px;
     }
-    .btn{
+   .detail-page .btn{
         width: 45%;
+    }
+    .cart-list{
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+    .cart-list .item img{
+
+        width: 80px;
+        height: 80px;
+    }
+    .cart-list .set{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+        justify-content: space-between;
+       padding: 20px;
+       border-bottom: 1px solid rgba(122, 122, 120, 0.596);
     }
    
 </style>
