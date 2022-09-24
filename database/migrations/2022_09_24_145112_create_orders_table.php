@@ -23,7 +23,7 @@ class CreateOrdersTable extends Migration
             $table->string('address');
             $table->timestamps();
         });
-    }
+}
 
     /**
      * Reverse the migrations.
